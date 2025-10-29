@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+   <div class="parent">
+       <div class="chlid">monday</div>
+       <div class="chlid">tuesday</div>
+       <div class="chlid">wednesday</div>
+       <div class="chlid">thursday</div>
+   </div>
+  <script >
+
+  let a  =  document.querySelector(".parent")
+  console.log(a.children[2].innerText = "Friday");
+
+
+  for (let index = 0; index < a.children.length; index++) {
+     console.log(a.children[index]);
+  }
+  a.children[1].style.color ="red"
+   
+
+  
+
+  </script>
+  </body>
 </html>
